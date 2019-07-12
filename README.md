@@ -2,6 +2,12 @@
 urcoach is your training planner.
 This will recommend you a plan with programming training. 
 
+## Installation
+
+1. git clone this repository. (not gem yet)
+1. Create symbolic file of urcoach.
+1. Add there to your $PATH for access to the urcoach. 
+
 ## Quickstart
 
 Type `urcoach` with `--level` and `--time`.
