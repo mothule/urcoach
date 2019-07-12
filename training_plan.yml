@@ -1,0 +1,85 @@
+
+-
+  title: Rails環境を構築せよ
+  body: |
+    Rails環境を構築し、`http://localhost:3000/` にアクセスしたら `Hello, world` を表示しなさい。
+  time_limit: <%= 5.minutes %>
+  tags:
+    - rails
+  levels:
+    - beginner
+-
+  title: Rails API環境を構築せよ
+  body: |
+    Rails環境でAPIを構築し、`http://localhost:3000/api/greeting?name=hoge` にGETアクセスしたら `{"greeting": "Hello, hoge"}` を表示しなさい。
+    View描画には直接renderは使わず `jbuilder`, `rabl`などビューテンプレートエンジンで返すこと。
+  time_limit: <%= 10.minutes %>
+  tags:
+    - rails
+    - api
+  levels:
+    - beginner
+-
+  title: Rails + MySQLでToDo一覧を作成せよ
+  body: |
+    Rails環境でAPIを構築し、`get http://localhost:3000/api/todos`で登録済みToDo一覧をJSONで表示しなさい。
+    `post http://localhost:3000/api/todos title="お風呂を準備" body="夕方娘が帰ってくる前にお風呂の準備をする"` で新しくToDoを作成しなさい。
+    `patch http://localhost:3000/api/todos/:id title="お風呂を準備" body="夕方娘が帰ってくる前にお風呂の準備をする"` で既存ToDoを更新しなさい。
+  time_limit: <%= 30.minutes %>
+  tags:
+    - rails
+    - mysql
+    - api
+    - active-record
+  levels:
+    - beginner
+-
+  title: モデルをオンメモリ化するイディオムコードを書きなさい
+  body: |
+    `[{title: 'hoge', body: 'hogehogehogehoge'}, {title: 'fuga', body: 'fugafugafugafuga'}]` というデータ構造を
+    hash['hoge']で`{title: 'hoge', body: 'hogehogehogehoge'}`が取れて
+    hash['fuga']で`{title: 'fuga', body: 'fugafugafugafuga'}`が取れること。
+  time_limit: <%= 5.minutes %>
+  tags:
+    - ruby
+  levels:
+    - beginner
+-
+  title: モデルにバリデーションを追加しなさい
+  body: |
+    名前,名字,ミドルネーム,生年月日,性別のモデルに対し
+    名前,名字は空禁止, 文字最大は20文字, 数字禁止
+    ミドルネームは文字最大は20文字
+    生年月日は空禁止, 今日や未来の日付禁止
+    性別は女性男性不明の３択限定
+    環境やモデル準備までの時間はカウントしない
+  time_limit: <%= 10.minutes %>
+  tags:
+    - active-record
+    - validation
+  levels:
+    - beginner
+-
+  title: rails5 + vue.js + typescript 構成の環境を構築せよ
+  body: |
+    Rails環境を構築し、`http://localhost:3000/` にアクセスしたら `Hello, world` を表示しなさい。
+  time_limit: <%= 10.minutes %>
+  tags:
+    - rails
+    - vuejs
+    - typescript
+  levels:
+    - normal
+
+-
+  title: Qiita APIにアクセスして投稿日時グラフを表示せよ
+  body: |
+    Rails環境で`http://localhost:3000/`にアクセスしたらQiitaAPIにアクセスし
+    記事の投稿日時を時間軸で集計し、何時に投稿が多いか少ないか分かるグラフを表示しなさい。
+  time_limit: <%= 60.minutes %>
+  tags:
+    - rails
+    - chart-js
+    - faraday
+  levels:
+    - beginner
